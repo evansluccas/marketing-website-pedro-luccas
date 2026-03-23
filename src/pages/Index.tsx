@@ -40,12 +40,12 @@ const Index = () => {
       {/* NAV */}
       <nav className="fixed top-0 w-full z-50 glass">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-2">
+          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
               <Code2 className="w-5 h-5 text-primary-foreground" />
             </div>
             <span className="font-display text-xl font-bold tracking-tight">NexCore</span>
-          </div>
+          </a>
           <div className="hidden md:flex items-center gap-6 text-sm text-muted-foreground">
             <a href="#solucoes" className="hover:text-foreground transition-colors">Soluções</a>
             <a href="#como-funciona" className="hover:text-foreground transition-colors">Como Funciona</a>
@@ -523,12 +523,12 @@ const Index = () => {
       <footer className="py-10 border-t border-border/50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="w-7 h-7 rounded-md gradient-primary flex items-center justify-center">
                 <Code2 className="w-4 h-4 text-primary-foreground" />
               </div>
               <span className="font-display font-bold">NexCore</span>
-            </div>
+            </a>
             <p className="text-sm text-muted-foreground">© 2026 NexCore. Todos os direitos reservados.</p>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="sm" className="border-primary/20 hover:bg-primary/5">
