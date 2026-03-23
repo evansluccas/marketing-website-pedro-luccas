@@ -1,5 +1,5 @@
 import { useState } from "react";
-import techpiLogo from "@/assets/techpi-logo.png";
+import techpiIcon from "@/assets/techpi-icon.png";
 import { motion } from "framer-motion";
 import {
   Zap, Shield, BarChart3, Cog, Globe, Smartphone,
