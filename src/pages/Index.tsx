@@ -135,7 +135,7 @@ const Index = () => {
             </div>
           </div>
           <a href="#contato">
-            <Button size="sm" className="gradient-primary border-0 text-primary-foreground rounded-full px-6 shadow-lg shadow-primary/20">
+            <Button size="sm" className="gradient-primary border-0 text-primary-foreground rounded-full px-6 shadow-lg shadow-primary/20 hover:opacity-85 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300">
               Falar Conosco
             </Button>
           </a>
@@ -171,7 +171,7 @@ const Index = () => {
               </motion.p>
               <motion.div variants={fadeUp} className="flex flex-wrap gap-4">
                 <a href="#contato">
-                  <Button size="lg" className="gradient-primary border-0 text-primary-foreground text-base px-8 h-13 rounded-full shadow-lg shadow-primary/20">
+                   <Button size="lg" className="gradient-primary border-0 text-primary-foreground text-base px-8 h-13 rounded-full shadow-lg shadow-primary/20 hover:opacity-85 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300">
                     Solicitar diagnóstico gratuito
                   </Button>
                 </a>
@@ -337,7 +337,7 @@ const Index = () => {
 
             <motion.div variants={fadeUp} className="text-center">
               <a href="#contato">
-                <Button size="lg" className="gradient-primary border-0 text-primary-foreground text-base px-8 h-13 rounded-full shadow-lg shadow-primary/20">
+                <Button size="lg" className="gradient-primary border-0 text-primary-foreground text-base px-8 h-13 rounded-full shadow-lg shadow-primary/20 hover:opacity-85 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300">
                   Falar com um especialista <ArrowRight className="w-4 h-4" />
                 </Button>
               </a>
@@ -617,7 +617,7 @@ const Index = () => {
                         onChange={(e) => setFormData({ ...formData, descricao: e.target.value })}
                       />
                     </div>
-                    <Button type="submit" size="lg" className="w-full gradient-primary border-0 text-primary-foreground text-base h-13 rounded-full shadow-lg shadow-primary/20">
+                    <Button type="submit" size="lg" className="w-full gradient-primary border-0 text-primary-foreground text-base h-13 rounded-full shadow-lg shadow-primary/20 hover:opacity-85 hover:shadow-xl hover:shadow-primary/30 hover:scale-105 transition-all duration-300">
                       Solicitar diagnóstico gratuito <Send className="w-4 h-4" />
                     </Button>
                   </form>
