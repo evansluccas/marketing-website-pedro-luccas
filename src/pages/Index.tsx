@@ -121,8 +121,9 @@ const Index = () => {
       {/* ═══════════════════════ NAV ═══════════════════════ */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-border/30">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <img src={techpiLogo} alt="Techπ" className="h-9" />
+          <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <img src={techpiIcon} alt="Techπ" className="h-9 w-9" />
+            <span className="font-display text-xl font-bold tracking-tight">Techπ</span>
           </a>
           <div className="hidden md:flex items-center">
             <div className="flex items-center gap-1 rounded-full bg-primary/5 border border-primary/10 px-2 py-1.5">
@@ -655,8 +656,9 @@ const Index = () => {
       <footer className="py-14 border-t border-border/30 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <img src={techpiLogo} alt="Techπ" className="h-7" />
+            <a href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+              <img src={techpiIcon} alt="Techπ" className="h-7 w-7" />
+              <span className="font-display font-bold text-lg">Techπ</span>
             </a>
             <p className="text-sm text-muted-foreground">© 2026 Techπ. Todos os direitos reservados.</p>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
