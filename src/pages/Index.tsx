@@ -645,7 +645,7 @@ const Index = () => {
               Para garantir qualidade e atenção em cada projeto, trabalhamos com vagas limitadas.
             </p>
             <a href="#contato">
-              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 rounded-full px-8">
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground hover:text-primary hover:border-primary-foreground rounded-full px-8 transition-all duration-300">
                 Garantir minha vaga <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
@@ -665,7 +665,7 @@ const Index = () => {
             </a>
             <p className="text-sm text-muted-foreground">© 2026 NexCore. Todos os direitos reservados.</p>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              <Button variant="outline" size="sm" className="border-border rounded-full hover:bg-muted/50">
+              <Button variant="outline" size="sm" className="border-border rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300">
                 <MessageCircle className="w-4 h-4" /> WhatsApp
               </Button>
             </a>
