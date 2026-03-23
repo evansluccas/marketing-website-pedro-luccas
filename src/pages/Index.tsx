@@ -645,7 +645,7 @@ const Index = () => {
               Para garantir qualidade e atenção em cada projeto, trabalhamos com vagas limitadas.
             </p>
             <a href="#contato">
-              <Button size="lg" variant="outline" className="border-white/40 text-white hover:bg-white hover:text-primary hover:border-white rounded-full px-8 transition-all duration-300">
+              <Button size="lg" className="bg-transparent border-2 border-white/50 text-white hover:bg-white hover:text-primary rounded-full px-8 transition-all duration-300">
                 Garantir minha vaga <ArrowRight className="w-4 h-4" />
               </Button>
             </a>
