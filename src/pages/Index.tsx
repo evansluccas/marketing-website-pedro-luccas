@@ -42,7 +42,8 @@ const Section = ({
 }) => (
   <section
     id={id}
-    className={`${noPadding ? "" : "py-24 md:py-36"} ${alt ? "bg-muted/40" : "bg-background"} ${className}`}
+    className={`${noPadding ? "" : "py-24 md:py-36"} ${alt ? "bg-section-alt" : "bg-background"} ${className}`}
+    style={alt ? { borderTop: '1px solid hsl(var(--border) / 0.5)', borderBottom: '1px solid hsl(var(--border) / 0.5)' } : {}}
   >
     {children}
   </section>
@@ -63,7 +64,12 @@ const SectionHeader = ({
   center?: boolean;
 }) => (
   <div className={center ? "text-center" : ""}>
-    <p className="text-xs font-semibold tracking-[0.2em] uppercase text-primary mb-4">{tag}</p>
+    <div className={`${center ? "flex justify-center" : ""} mb-5`}>
+      <span className="inline-flex items-center gap-2 rounded-full border border-primary/20 bg-primary/5 px-4 py-1.5 text-xs font-semibold tracking-[0.15em] uppercase text-primary">
+        <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse-glow" />
+        {tag}
+      </span>
+    </div>
     <h2 className="font-display text-3xl md:text-[2.75rem] lg:text-5xl font-bold leading-tight mb-4">
       {title} <span className="gradient-text">{highlight}</span>
     </h2>
