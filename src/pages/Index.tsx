@@ -1,4 +1,5 @@
 import { useState } from "react";
+import techpiLogo from "@/assets/techpi-logo.png";
 import { motion } from "framer-motion";
 import {
   Zap, Shield, BarChart3, Cog, Globe, Smartphone,
@@ -120,11 +121,8 @@ const Index = () => {
       {/* ═══════════════════════ NAV ═══════════════════════ */}
       <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-xl border-b border-border/30">
         <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-          <a href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-            <div className="w-9 h-9 rounded-xl gradient-primary flex items-center justify-center">
-              <Code2 className="w-5 h-5 text-primary-foreground" />
-            </div>
-            <span className="font-display text-xl font-bold tracking-tight">NexCore</span>
+          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+            <img src={techpiLogo} alt="Techπ" className="h-9" />
           </a>
           <div className="hidden md:flex items-center">
             <div className="flex items-center gap-1 rounded-full bg-primary/5 border border-primary/10 px-2 py-1.5">
@@ -200,7 +198,7 @@ const Index = () => {
                     <div className="w-3 h-3 rounded-full bg-destructive/50" />
                     <div className="w-3 h-3 rounded-full bg-accent/50" />
                     <div className="w-3 h-3 rounded-full bg-primary/30" />
-                    <span className="text-xs text-muted-foreground ml-3 font-mono">dashboard.nexcore.app</span>
+                    <span className="text-xs text-muted-foreground ml-3 font-mono">dashboard.techpi.app</span>
                   </div>
                   <div className="grid grid-cols-2 gap-3">
                     {[
@@ -657,13 +655,10 @@ const Index = () => {
       <footer className="py-14 border-t border-border/30 bg-background">
         <div className="max-w-7xl mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <a href="/" className="flex items-center gap-2.5 hover:opacity-80 transition-opacity">
-              <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-                <Code2 className="w-4 h-4 text-primary-foreground" />
-              </div>
-              <span className="font-display font-bold text-lg">NexCore</span>
+            <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+              <img src={techpiLogo} alt="Techπ" className="h-7" />
             </a>
-            <p className="text-sm text-muted-foreground">© 2026 NexCore. Todos os direitos reservados.</p>
+            <p className="text-sm text-muted-foreground">© 2026 Techπ. Todos os direitos reservados.</p>
             <a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="sm" className="border-border rounded-full hover:bg-primary hover:text-primary-foreground hover:border-primary transition-all duration-300">
                 <MessageCircle className="w-4 h-4" /> WhatsApp
